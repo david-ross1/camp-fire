@@ -95,7 +95,7 @@ function rainCount(drops) {
 
 function makeItRain(canvas) {
   if (!paused) {
-  if (gameFrame % 7 == 0) {
+  if (gameFrame % 4 == 0) {
     let newRain = new Rain(canvas, ctx);
     raindrops.push(newRain);
   }
@@ -132,8 +132,10 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
 // canvas.width =   950;
 // canvas.height =   540;
-canvas.width =   1000;
-canvas.height =   650;
+// canvas.width =   1000;
+// canvas.height =   650;
+canvas.width = 1250;
+canvas.height = 750;
 let thisfire = new Fire(canvas, ctx);
 const canvasdiv = document.getElementById("canvasdiv");
 
